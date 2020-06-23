@@ -34,15 +34,6 @@ class OpenCSVToGson {
             CSVUser[] usrObj = gson.fromJson(br, CSVUser[].class);
             List<CSVUser> csvUserList = Arrays.asList(usrObj);
 
-//            for(CSVUser csvUser: csvUserList) {
-//                System.out.println(csvUser);
-//                System.out.println("Name : "+csvUser.getName());
-//                System.out.println("Email : "+csvUser.getEmail());
-//                System.out.println("Phone Number : "+csvUser.getPhoneNum());
-//                System.out.println("Country : "+csvUser.getCountry());
-//                System.out.println("---------------------------");
-//            }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
