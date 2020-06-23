@@ -27,7 +27,6 @@ public class OpenCSVReader {
         }
     }
 
-
     public static void main(String[] args) throws IOException {
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(FILE_PATH));
