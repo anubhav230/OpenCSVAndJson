@@ -1,4 +1,4 @@
-package com.bridgelabz.opencsvandgson;
+package com.bridgelabz.service;
 
 import com.opencsv.CSVReader;
 

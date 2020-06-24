@@ -1,4 +1,4 @@
-package com.bridgelabz.opencsvandgson;
+package com.bridgelabz.model;
 
 import com.opencsv.bean.CsvBindByName;
 
@@ -16,6 +16,9 @@ public class CSVUser {
     @CsvBindByName
     private String country;
 
+    public CSVUser() {
+    }
+
     public CSVUser(String name, String email, String phoneNum, String country) {
         this.name = name;
         this.email = email;
@@ -23,21 +26,6 @@ public class CSVUser {
         this.country = country;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPhoneNum(String phoneNum) {
-        this.phoneNum = phoneNum;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
 
     public String getName() {
         return name;
