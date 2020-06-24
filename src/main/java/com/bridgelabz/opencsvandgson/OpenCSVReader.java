@@ -39,8 +39,6 @@ public class OpenCSVReader {
                 System.out.println("phone number = " + nextRecord[2]);
                 System.out.println("country = " + nextRecord[3]);
             }
-
-
         }
         readAllRecord();
     }

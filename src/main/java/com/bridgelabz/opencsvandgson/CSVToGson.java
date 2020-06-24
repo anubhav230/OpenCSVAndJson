@@ -1,7 +1,6 @@
 package com.bridgelabz.opencsvandgson;
 
 import com.google.gson.Gson;
-import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
@@ -17,7 +16,7 @@ class OpenCSVToGson {
     private static final String FILE_PATH = "./sample.csv";
     private static final String JSON_FILE_PATH = "./sample.json";
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
             Reader reader = Files.newBufferedReader(Paths.get(FILE_PATH));
             CsvToBeanBuilder<CSVUser> csvToBean = new CsvToBeanBuilder<>(reader);
