@@ -1,19 +1,19 @@
 package com.bridgelabz.model;
 
-import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
 
 public class CSVUser {
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 0)
     private String name;
 
-    @CsvBindByName(column = "email", required = true)
+    @CsvBindByPosition(position = 1)
     private String email;
 
-    @CsvBindByName(column = "phone")
+    @CsvBindByPosition(position = 2)
     private String phoneNum;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 3)
     private String country;
 
     public CSVUser() {
@@ -25,7 +25,6 @@ public class CSVUser {
         this.phoneNum = phoneNum;
         this.country = country;
     }
-
 
     public String getName() {
         return name;
@@ -47,6 +46,4 @@ public class CSVUser {
     public String toString() {
         return name + "," + email + "," + phoneNum + "," + country;
     }
-
-
 }

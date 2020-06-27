@@ -1,7 +1,6 @@
 package com.bridgelabz.service;
 
 import com.opencsv.CSVReader;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
@@ -17,6 +16,7 @@ public class OpenCSVReader {
                 CSVReader csvReader = new CSVReader(reader);
         ) {
             List<String[]> records = csvReader.readAll();
+
             for (String[] record : records) {
                 System.out.println("Name : " + record[0]);
                 System.out.println("Email : " + record[1]);

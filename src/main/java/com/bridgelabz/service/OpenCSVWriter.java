@@ -16,7 +16,6 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 
 public class OpenCSVWriter {
     private static final String FILE_PATH = "./sample.csv";
-
     public static void main(String[] args) throws IOException, CsvDataTypeMismatchException,
             CsvRequiredFieldEmptyException {
 
@@ -32,7 +31,6 @@ public class OpenCSVWriter {
             CSVUsers.add(new CSVUser("neeru", "neeru@gmail.com", "8888888888", "india"));
 
             beanToCsv.write(CSVUsers);
-
         }
     }
 }
